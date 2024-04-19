@@ -1,8 +1,6 @@
 <?php 
-
 require 'php/name.php';
 require 'php/form.php';
-
 ?>
 
 <!DOCTYPE php>
