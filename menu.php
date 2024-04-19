@@ -246,19 +246,16 @@ require 'php/form.php';
           </div>
         
         
-          <?=   createformTwo('Wellet'); ?>
-          <?=   createformTwo('earing'); ?>
-          <?=   createformOne('Card'); ?>
-          <?=   createformTwo('nekless'); ?>
-          <?=   createformTwo('ring'); ?>
-          <?=   createformOne('watch'); ?>
-          <?=   createformTwo('ring'); ?>
-          <?=   createformOne('watch'); ?>
-          <?=   createformTwo('ring'); ?>
-          <?=   createformOne('watch'); ?>
-          <?=   createformTwo('ring'); ?>
-       
-       
+          <?=   createformTwo('Wellet', ' kuy_teav'); ?>
+          <?=   createformTwo('earing', ' Lok-lak'); ?>
+          <?=   createformOne('Card',' kuy_teav'); ?>
+          <?=   createformOne('Card',' kuy_teav'); ?>
+          <?=   createformOne('Card',' kuy_teav'); ?>
+          <?=   createformOne('Card',' lort-Cha'); ?>
+          
+          
+
+          
          
        
         

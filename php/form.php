@@ -1,15 +1,15 @@
 <?php
-require_once 'php/name.php';;
-function createformOne($parameter)
+require_once 'php/name.php';
+function createformOne($parameter1 , $type)
 {
 $Tagname = new Product();
 $TagenameProduct = $Tagname->GetName('ProductONE');
 $TagenameProductTwo = $Tagname->GetName('ProductTwo');
-    $form = '<div class="col-sm-6 col-lg-4 all kuy_teav">
+    $form = '<div class="col-sm-6 col-lg-4 all'. $type.' ">
     <div class="box">
         <div>
             <div class="img-box">
-                <img src="' . $TagenameProduct[$parameter] . '" alt="kuy teav">
+                <img src="' . $TagenameProduct[$parameter1] . '" alt="kuy teav">
             </div>
             <div class="detail-box">
                 <h5>
@@ -54,16 +54,16 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
 return $form;
 }
 
-function createformTwo($parameter)
+function createformTwo($parameter2, $type)
 {
 $Tagname = new Product();
 $TagenameProduct = $Tagname->GetName('ProductONE');
 $TagenameProductTwo = $Tagname->GetName('ProductTwo');
-    $form = '<div class="col-sm-6 col-lg-4 all kuy_teav">
+    $form = '<div class="col-sm-6 col-lg-4 all'. $type.' ">
     <div class="box">
         <div>
             <div class="img-box">
-                <img src="' . $TagenameProductTwo[$parameter] . '" alt="kuy teav">
+                <img src="' . $TagenameProductTwo[$parameter2] . '" alt="kuy teav">
             </div>
             <div class="detail-box">
                 <h5>

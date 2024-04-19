@@ -15,7 +15,7 @@ class Product
         'ProductONE' => array(
           'watch'=> 'https://media.istockphoto.com/id/1189983695/photo/smart-watch-for-branding-and-mock-up-3d-render-illustration.jpg?s=2048x2048&w=is&k=20&c=gtEOE3RPZOZAzKQO7wWybz4XN-iiv471f3gtoQCtuZI=',                              
           'Card'=>'https://media.istockphoto.com/id/1180795255/vector/blank-company-lanyard-realistic-mockup-with-blank-black-id-card-hanging-on-blue-neck-strap.jpg?s=612x612&w=0&k=20&c=6BHk7-dsqXxDiwXm-K4LFAQtRp3j-Shk1DIi-gvTPJc=',
-          'boom'=>"https://miro.medium.com/v2/da:true/resize:fit:1200/0*ZjYSm_q36J4KChdn",
+          'boowam'=>"https://miro.medium.com/v2/da:true/resize:fit:1200/0*ZjYSm_q36J4KChdn",
 
         ),
         'ProductTwo' => array
