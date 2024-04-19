@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE php>
+<php>
 
 <head>
   <!-- Basic -->
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -26,25 +26,29 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.css?v=<?php echo time() ?>" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
 
 <body class="sub_page">
-
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    </script>
   <div class="hero_area" style="background-color: black;">
     <div class="bg-box">
-   
+      
     </div>
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span>
-              Envision food
+              MiRa
             </span>
           </a>
 
@@ -54,17 +58,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="menu.php">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.php">About</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="book.html">Book Table</a>
+                <a class="nav-link" href="book.php">Book Table <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             <div class="user_option">
@@ -141,37 +145,66 @@
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Book A Table
+        </h2>
+      </div>
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/banh chev-3.png" alt="">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Your Email" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    How many persons?
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Book Now
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                We Are Envision food
-              </h2>
-            </div>
-            <p>
-              Envision food is the perfect place to go for a quick and affordable meal when you're on the go. Our food is always fresh and delicious, and our service is fast and friendly.
-            </p>
-            <a href="">
-              Read More
-            </a>
+          <div class="map_container ">
+            <div id="googleMap"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
+  <!-- end book section -->
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -207,10 +240,10 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Envision food
+              MiRa
             </a>
             <p>
-              Envision food is the perfect place to take your family when you're looking for a fun and casual meal. Our kids' menu is full of delicious and kid-friendly options, and our play area will keep them entertained for hours
+              Mira is the perfect place to take your family when you're looking for a fun and casual meal. Our kids' menu is full of delicious and kid-friendly options, and our play area will keep them entertained for hours
             </p>
             <div class="footer_social">
               <a href="https://www.facebook.com/profile.php?id=100023470206503&mibextid=ZbWKwL">
@@ -238,9 +271,9 @@
           <p>
             Everyday
           </p>
-          <p>
-            7:30 Am -9:30 Pm
-          </p>
+         <time>
+          7:30 Am -9:30 Pm
+         </time>
         </div>
       </div>
       <div class="footer-info">
@@ -275,4 +308,4 @@
 
 </body>
 
-</html>
+</php>

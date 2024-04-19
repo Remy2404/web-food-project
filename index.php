@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html>
+<?php
+ require 'php/conect.php';
+?>
 
+
+<!DOCTYPE php>
+<php>
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -26,23 +30,28 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.css?v=<?php echo time() ?>" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
 
 <body>
-
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    </script>
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/cover-web.png" alt="cover-web">
-    </div>
+    
+      <img src="<?= $ng = $NewObject['idk']; ?>" alt="cover-web">
+      </div>
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span>
               Envision food
             </span>
@@ -55,13 +64,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="menu.php">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.php">About</a>
               </li>
             </ul>
             <div class="user_option">
@@ -225,7 +234,7 @@
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/banh-chev-crepes-khmer.jpg" alt="">
+                <img src="<?= $Ot_jet_mes_ha = $NewObject['Skrit']; ?>" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -294,7 +303,7 @@
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/Bey Dom Neib.png" alt="Bey Dom Neib">
+                <img src=" <?= $ng = $NewObject['Skrit']; ?>" alt="Bey Dom Neib">
               </div>
               <div class="detail-box">
                 <h5>
@@ -393,7 +402,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/Lok Lak.png" alt="Lok lak">
+                  <img  src="<?= $err = $NewObject['earing']; ?>"  alt="Lok lak">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -469,7 +478,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/kuy Teav.png" alt="kuy teav">
+                  <img src="<?= $err = $NewObject['earing']; ?>" alt="kuy teav">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -545,7 +554,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/Nom banh Chok.png" alt="Nom banh Chok">
+                  <img src="<?= $nghx = $NewObject['Wellet']; ?>"alt="Nom banh Chok">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -621,7 +630,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/Fish Amok,.png" alt="fish Amok">
+                  <img src="<?= $err = $NewObject['earing']; ?>" alt="fish Amok">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -697,7 +706,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/Kam-Pisa-Chien.png" alt="Kam-Pisa-Chien">
+                  <img src="<?= $err = $NewObject['Skrit']; ?>" alt="Kam-Pisa-Chien">
                 </div>
                 <div class="detail-box">
                   <h5->
@@ -772,7 +781,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/banh-chev-crepes-khmer-removebg-preview.png" alt="banh-chev-crepes-khmer">
+                  <img src="<?= $nghx = $NewObject['earing']; ?>">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -847,7 +856,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/lort cha-ui.png" alt="lort cha">
+                  <img src="<?= $crr = $NewObject['Skrit']; ?>" alt="lort cha">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -1139,7 +1148,7 @@ First, let me tell you about nom pang, which is a Cambodian sandwich. Nom pang i
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Ramy</a><br><br>
+          <a href="https://php.design/">Ramy</a><br><br>
         </p>
       </div>
     </div>
@@ -1169,4 +1178,4 @@ First, let me tell you about nom pang, which is a Cambodian sandwich. Nom pang i
 
 </body>
 
-</html>
+</php>
