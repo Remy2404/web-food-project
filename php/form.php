@@ -1,7 +1,8 @@
 <?php
 require_once 'php/name.php';
-function createformOne($parameter1 , $type)
+function createformOne($parameter1 , $type , $name ,$price)
 {
+  
 $Tagname = new Product();
 $TagenameProduct = $Tagname->GetName('ProductONE');
 $TagenameProductTwo = $Tagname->GetName('ProductTwo');
@@ -13,14 +14,14 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
             </div>
             <div class="detail-box">
                 <h5>
-                    Kuy Teav
+                  '. $name. '
                 </h5>
                 <p>
-                    Kuy teav is a Cambodian dish that is made of rice noodles and pork broth. It is a hearty and delicious breakfast that can be customized with different toppings and sauces. Kuy teav is a dish that reflects the diversity and richness of Cambodian cuisine.
+                '.  '
                 </p>
                 <div class="options">
                     <h6>
-                        6000 (Real)
+                    '. $price. '
                     </h6>
                     <a href="">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -54,7 +55,7 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
 return $form;
 }
 
-function createformTwo($parameter2, $type)
+function createformTwo($parameter2, $type, $name ,$price)
 {
 $Tagname = new Product();
 $TagenameProduct = $Tagname->GetName('ProductONE');
@@ -67,14 +68,14 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
             </div>
             <div class="detail-box">
                 <h5>
-                    Kuy Teav
+                  '.$name.'
                 </h5>
                 <p>
-                    Kuy teav is a Cambodian dish that is made of rice noodles and pork broth. It is a hearty and delicious breakfast that can be customized with different toppings and sauces. Kuy teav is a dish that reflects the diversity and richness of Cambodian cuisine.
+                  '.'
                 </p>
                 <div class="options">
                     <h6>
-                        6000 (Real)
+                       '.$price.'
                     </h6>
                     <a href="">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">

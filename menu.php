@@ -155,15 +155,17 @@ require 'php/form.php';
           Our Menu
         </h2>
       </div>
-
+      <?php 
+        $name = array('Skrit','Bag', 'Handmaade', 'Ring', 'Modern','Neckless');
+      ?>
       <ul class="filters_menu">
         <li class="active" data-filter="*">All</li>
-        <li data-filter=".Lok-lak">Lok Lak</li>
-        <li data-filter=".kuy_teav">Kuy Teav</li>
-        <li data-filter=".Nomb_banh_chok">Nom Banh chok</li>
-        <li data-filter=".banh-chev">Banh Chev</li>
-        <li data-filter=".Amok">Amok</li>
-        <li data-filter=".lort-Cha">Lort Cha</li>
+        <li data-filter=".Lok-lak">   <?= $name[0]; ?> </li>
+        <li data-filter=".kuy_teav"> <?= $name[1]; ?></li>
+        <li data-filter=".Nomb_banh_chok">  <?= $name[2]; ?>  </li>
+        <li data-filter=".banh-chev"> <?= $name[3]; ?> </li>
+        <li data-filter=".amok"> <?= $name[4]; ?> </li>
+        <li data-filter=".lort-Cha"> <?= $name[5]; ?> </li>
       </ul>
 
       <div class="filters-content">
@@ -244,21 +246,53 @@ require 'php/form.php';
               </div>
             </div>
           </div>
-        
-        
-          <?=   createformTwo('Wellet', ' kuy_teav'); ?>
-          <?=   createformTwo('earing', ' Lok-lak'); ?>
-          <?=   createformOne('Card',' kuy_teav'); ?>
-          <?=   createformOne('Card',' kuy_teav'); ?>
-          <?=   createformOne('Card',' kuy_teav'); ?>
-          <?=   createformOne('Card',' lort-Cha'); ?>
-          
-          
-
-          
-         
-       
-        
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('earing',' amok','earing', '72$'); ?>
+          <?=   createformTwo('Skrit',' amok','Skrit', '120$'); ?>
+          <?=   createformOne('Card',' kuy_teav' ,'Card', '4.5$'); ?>
+          <?=   createformTwo('earing',' Nomb_banh_chok','Card', '4.5$'); ?>
+          <?=   createformOne('Card',' lort-Cha','Card', '4.5$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Crystal Ring', '55$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Crystal Ring', '55$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('earing',' amok','earing', '72$'); ?>
+          <?=   createformTwo('Skrit',' amok','Skrit', '120$'); ?>
+          <?=   createformOne('Card',' kuy_teav' ,'Card', '4.5$'); ?>
+          <?=   createformTwo('earing',' Nomb_banh_chok','Card', '4.5$'); ?>
+          <?=   createformOne('Card',' lort-Cha','Card', '4.5$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('earing',' amok','earing', '72$'); ?>
+          <?=   createformTwo('Skrit',' amok','Skrit', '120$'); ?>
+          <?=   createformOne('Card',' kuy_teav' ,'Card', '4.5$'); ?>
+          <?=   createformTwo('earing',' Nomb_banh_chok','Card', '4.5$'); ?>
+          <?=   createformOne('Card',' lort-Cha','Card', '4.5$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('earing',' amok','earing', '72$'); ?>
+          <?=   createformTwo('Skrit',' amok','Skrit', '120$'); ?>
+          <?=   createformOne('Card',' kuy_teav' ,'Card', '4.5$'); ?>
+          <?=   createformTwo('earing',' Nomb_banh_chok','Card', '4.5$'); ?>
+          <?=   createformOne('Card',' lort-Cha','Card', '4.5$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('earing',' amok','earing', '72$'); ?>
+          <?=   createformTwo('Skrit',' amok','Skrit', '120$'); ?>
+          <?=   createformOne('Card',' kuy_teav' ,'Card', '4.5$'); ?>
+          <?=   createformTwo('earing',' Nomb_banh_chok','Card', '4.5$'); ?>
+          <?=   createformOne('Card',' lort-Cha','Card', '4.5$'); ?>     
   </section>
 
   <!-- end food section -->

@@ -1,5 +1,9 @@
 <?php
  require 'php/conect.php';
+ require 'php/name.php';
+require 'php/form.php';
+
+ 
 ?>
 
 
@@ -45,7 +49,7 @@
   <div class="hero_area">
     <div class="bg-box">
     
-      <img src="<?= $ng = $NewObject['idk']; ?>" alt="cover-web">
+      <img src="<?= $ng = $NewObject['wallpaper']; ?>" alt="cover-web">
       </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -385,15 +389,17 @@
           Our Menu
         </h2>
       </div>
-
+      <?php 
+        $name = array('Skrit','Bag', 'Handmaade', 'Ring', 'Modern','Neckless');
+      ?>
       <ul class="filters_menu">
         <li class="active" data-filter="*">All</li>
-        <li data-filter=".Lok-lak">Lok Lak</li>
-        <li data-filter=".kuy_teav">Kuy Teav</li>
-        <li data-filter=".Nomb_banh_chok">Nom Banh chok</li>
-        <li data-filter=".banh-chev">Banh Chev</li>
-        <li data-filter=".Amok">Amok</li>
-        <li data-filter=".lort-Cha">Lort Cha</li>
+        <li data-filter=".Lok-lak">   <?= $name[0]; ?> </li>
+        <li data-filter=".kuy_teav"> <?= $name[1]; ?></li>
+        <li data-filter=".Nomb_banh_chok">  <?= $name[2]; ?>  </li>
+        <li data-filter=".banh-chev"> <?= $name[3]; ?> </li>
+        <li data-filter=".amok"> <?= $name[4]; ?> </li>
+        <li data-filter=".lort-Cha"> <?= $name[5]; ?> </li>
       </ul>
 
       <div class="filters-content">
@@ -474,460 +480,20 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all kuy_teav">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="<?= $err = $NewObject['earing']; ?>" alt="kuy teav">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Kuy Teav
-                  </h5>
-                  <p>
-                    Kuy teav is a Cambodian dish that is made of rice noodles and pork broth. It is a hearty and delicious breakfast that can be customized with different toppings and sauces. Kuy teav is a dish that reflects the diversity and richness of Cambodian cuisine.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      6000 (Real)
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all Nomb_banh_chok">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="<?= $nghx = $NewObject['Wellet']; ?>"alt="Nom banh Chok">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Nom Banh Chok
-                  </h5>
-                  <p>
-                    Nom banh chok is a fresh and flavorful Cambodian dish that is made of rice noodles and fish curry sauce. The noodles are slightly sour and the sauce is creamy and spicy. The dish is garnished with crunchy and colorful herbs and vegetables. Nom banh chok is a dish that represents the ancient and rich culture of Cambodia.
-                  </p>
-                  <div class="options">
-                    <h6>
-                    4500 (Real)
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all Amok">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="<?= $err = $NewObject['earing']; ?>" alt="fish Amok">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Fish Amok
-                  </h5>
-                  <p>
-                    Fish amok is a traditional Cambodian dish that consists of fish cooked in a rich coconut curry sauce and steamed in banana leaves. The sauce is made with kroeung, a fragrant paste of lemongrass, galangal, turmeric, kaffir lime, garlic, and chilli. The fish is usually white and flaky, such as cod or snapper. The dish has a smooth and creamy texture and a complex and aromatic flavor. 
-                  </p>
-                  <div class="options">
-                    <h6>
-                      40000 (Real)
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all kam-pisa-chien">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="<?= $err = $NewObject['Skrit']; ?>" alt="Kam-Pisa-Chien">
-                </div>
-                <div class="detail-box">
-                  <h5->
-                    Kam Pisa chien
-                  </h5>
-                  <p>
-                    Kam Pisa Chien is a crispy and tasty snack that is made of fried shrimp or prawn cakes and French bread. The shrimp or prawn cakes are seasoned with garlic, egg, flour, salt, pepper, and sugar. The French bread is toasted lightly on a grill. The dish is served with a sweet and sour sauce that adds flavor and freshness.
-                  <div class="options">
-                    <h6>
-                      2000 (Real)
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all banh-chev">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="<?= $nghx = $NewObject['earing']; ?>">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                  Banh Chev
-                  </h5>
-                  <p>
-                    Banh chev is a delicious snack that can be enjoyed at any time of the day. It is made of crispy rice flour pancakes that are filled with savory ingredients like meat, seafood, vegetables, and herbs. The pancakes are folded into half-moon shapes and served with a tangy sauce that balances the flavors.
-                  <div class="options">
-                    <h6>
-                      5000 (Real)
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all lort-Cha">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="<?= $crr = $NewObject['Skrit']; ?>" alt="lort cha">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Lord cha
-                  </h5>
-                  <p>
-                    Lort cha is a tasty and satisfying dish that is made of rice noodles and stir-fried ingredients. The noodles are soft and chewy and the sauce is sweet and savory. The dish is topped with a fried egg, chili sauce, and a chive cake for extra flavor and texture.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      5000 (Real)
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('earing',' amok','earing', '72$'); ?>
+          <?=   createformTwo('Skrit',' amok','Skrit', '120$'); ?>
+          <?=   createformOne('Card',' kuy_teav' ,'Card', '4.5$'); ?>
+          <?=   createformTwo('earing',' Nomb_banh_chok','Card', '4.5$'); ?>
+          <?=   createformOne('Card',' lort-Cha','Card', '4.5$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Crystal Ring', '55$'); ?>
+          <?=   createformTwo('Wellet', ' kuy_teav' , 'Wellet', '23$'); ?>
+          <?=   createformTwo('Skrit', ' Lok-lak','Skrit','99$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+          <?=   createformTwo('ring',' banh-chev','Khmer-Ring', '55$'); ?>
+  
   </section>
 
   <!-- end food section -->
