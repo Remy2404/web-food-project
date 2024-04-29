@@ -1,11 +1,21 @@
 <?php
 require_once 'php/name.php';
-function createformOne($parameter1 , $type , $name ,$price)
+// function controller ($parameterPic,$parametername,$parameterPrice,)
+// {
+//     $page ='test.php';
+
+//     $gotppage = array(
+//         $parameterPic,
+//         $parametername,
+//         $parameterPrice,
+//     );
+//     return $gotppage ;
+// }
+function createformOne($parameter1 , $type , $name ,$price ,$description)
 {
-  
 $Tagname = new Product();
+$page ='test.php';
 $TagenameProduct = $Tagname->GetName('ProductONE');
-$TagenameProductTwo = $Tagname->GetName('ProductTwo');
     $form = '<div class="col-sm-6 col-lg-4 all'. $type.' ">
     <div class="box">
         <div>
@@ -17,13 +27,13 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
                   '. $name. '
                 </h5>
                 <p>
-                '.  '
+                '. $description.  '
                 </p>
                 <div class="options">
                     <h6>
                     '. $price. '
                     </h6>
-                    <a href="">
+                    <a href="'.$page.' ">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                             <g>
                                 <g>
@@ -55,10 +65,13 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
 return $form;
 }
 
-function createformTwo($parameter2, $type, $name ,$price)
+
+// .controller($parameter1,$name,$price);'
+function createformTwo($parameter2, $type, $name ,$price, $description)
 {
+
+$page ='test.php';
 $Tagname = new Product();
-$TagenameProduct = $Tagname->GetName('ProductONE');
 $TagenameProductTwo = $Tagname->GetName('ProductTwo');
     $form = '<div class="col-sm-6 col-lg-4 all'. $type.' ">
     <div class="box">
@@ -71,13 +84,13 @@ $TagenameProductTwo = $Tagname->GetName('ProductTwo');
                   '.$name.'
                 </h5>
                 <p>
-                  '.'
+                  '. $description.'
                 </p>
                 <div class="options">
                     <h6>
                        '.$price.'
                     </h6>
-                    <a href="">
+                    <a href="'.$page.'">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                             <g>
                                 <g>

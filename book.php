@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> MiRa </title>
+  <title> Envision</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -48,14 +48,13 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.php">
             <span>
-              MiRa
+              Envision
             </span>
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
-          </button>
-
+          </button>          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
@@ -72,7 +71,7 @@
               </li>
             </ul>
             <div class="user_option">
-              <a href="" class="user_link">
+              <a href="profile.php" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <a class="cart_link" href="#">
@@ -150,7 +149,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+          Comment Us
         </h2>
       </div>
       <div class="row">
@@ -240,10 +239,10 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              MiRa
+              Envision
             </a>
             <p>
-              Mira is the perfect place to take your family when you're looking for a fun and casual meal. Our kids' menu is full of delicious and kid-friendly options, and our play area will keep them entertained for hours
+            Envision service is fast and friendly. 
             </p>
             <div class="footer_social">
               <a href="https://www.facebook.com/profile.php?id=100023470206503&mibextid=ZbWKwL">
@@ -272,13 +271,13 @@
             Everyday
           </p>
          <time>
-          7:30 Am -9:30 Pm
+         24 Hours / week
          </time>
         </div>
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By Ramy
+          &copy; <span id="displayYear"></span> All Rights Reserved By Haha lol
         </p>
       </div>
     </div>

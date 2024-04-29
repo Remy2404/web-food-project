@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> MiRa </title>
+  <title> Envision </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -48,7 +48,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.php">
             <span>
-              Envision food
+              Envision 
             </span>
           </a>
 
@@ -72,7 +72,7 @@
               </li>
             </ul>
             <div class="user_option">
-              <a href="" class="user_link">
+              <a href="profile.php" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <a class="cart_link" href="#">
@@ -153,21 +153,40 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/banh chev-3.png" alt="">
+            <img src="images/LOGOteam1.png" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Envision food
+                We Are Envision 
               </h2>
             </div>
             <p>
-              Envision food is the perfect place to go for a quick and affordable meal when you're on the go. Our food is always fresh and delicious, and our service is fast and friendly.
+            Envision service is fast and friendly. <br>
+          <font size="5px">
+            <li> <font color="orange"> Phou kokseng</font> CEO, Best Programmer, Super Intelligent, smart  &#128176; &#128187; &#128184;</li>
+            <li> <font color="orange"> Phon Ramy </font>FOUNDER, Advisor, super Intelligent, smart  &#128176; &#128184;&#128187;</li>
+            <li> <font color="orange"> Penh Sokpheavy </font> UX/UI, Intelligent, smart  &#128176;&#128187; &#128184;</li>
+            <li> <font color="orange">Phon Lengthang </font> Bug-Fixer,  Intelligent, smart, Clean coding  &#128176;&#128187; &#128184; </li>
+            <li> <font color="orange">Bunroun Serey SarakRoeuth</font>Best Programmer, Super Intelligent, smart  &#128176; &#128184; &#128187; </li>
+            <li> <font color="orange">Nyfong</font> Coding, Respect, Working hard, calm  &#128176; &#128184; &#128187;</li>
+           
+          </font>
+            <hr>
+            <h2>Fun Facts</h2>
+            <ol type="a">
+            <font size="6px">
+            <li> database using an array  &#128514; &#128511;</li>
+            <li> user interface friendly  &#128514;</li>
+            <li> we work as a team smoothly &#128077;</li>
+            <li> First experinece &#129388;</li>
+            </font>
+            </ol>
             </p>
-            <a href="">
-              Read More
+            <a href="menu.php">
+              Shopping
             </a>
           </div>
         </div>
@@ -211,10 +230,10 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Envision food
+              Envision 
             </a>
             <p>
-              Envision food is the perfect place to take your family when you're looking for a fun and casual meal. Our kids' menu is full of delicious and kid-friendly options, and our play area will keep them entertained for hours
+              Envision is the perfect place to take your family when you're looking for a quality product. Our kids' menu is full of friendly options, and our Envision service is fast and friendly.
             </p>
             <div class="footer_social">
               <a href="https://www.facebook.com/profile.php?id=100023470206503&mibextid=ZbWKwL">
@@ -243,13 +262,13 @@
             Everyday
           </p>
           <p>
-            7:30 Am -9:30 Pm
+          24 Hours / week
           </p>
         </div>
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By Ramy
+          &copy; <span id="displayYear"></span> All Rights Reserved By Haha lol
         </p>
       </div>
     </div>
